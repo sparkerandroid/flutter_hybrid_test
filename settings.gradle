@@ -1,0 +1,6 @@
+include ':app'
+setBinding(new Binding([gradle: this]))                                 // new
+evaluate(new File(                                                      // new
+        settingsDir.parentFile,                                                // new
+        'flutter_module_for_hybrid/.android/include_flutter.groovy'// 注意：flutterModuleName是和我们的原生Android项目是平级的。否则，需要更改路径
+))

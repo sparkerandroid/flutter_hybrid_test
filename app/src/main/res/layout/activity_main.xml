@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/rg_native"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/holo_orange_light"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rb_basic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="BasicMessageChannel" />
+
+        <RadioButton
+            android:id="@+id/rb_method"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MethodMessageChannel" />
+
+        <RadioButton
+            android:id="@+id/rb_event"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EventMessageChannel" />
+
+        <TextView
+            android:id="@+id/tv_message_from_dart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="来自Dart端的消息" />
+
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/fl_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="@android:color/holo_blue_bright" />
+
+</LinearLayout>
